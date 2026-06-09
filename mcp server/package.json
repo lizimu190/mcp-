@@ -1,0 +1,38 @@
+{
+  "name": "mcp-server-filesystem",
+  "version": "1.0.0",
+  "description": "MCP Server for local filesystem control",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "filesystem"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "archiver": "^8.0.0",
+    "cheerio": "^1.2.0",
+    "express": "^5.2.1",
+    "extract-zip": "^2.0.1",
+    "fast-xml-parser": "^5.8.0",
+    "mammoth": "^1.12.0",
+    "pdf-parse": "^2.4.5",
+    "tar": "^7.5.16",
+    "xlsx": "^0.18.5",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/archiver": "^8.0.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.2",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}

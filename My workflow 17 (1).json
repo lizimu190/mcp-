@@ -1,0 +1,1069 @@
+{
+  "name": "My workflow 17",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "agent deepseek",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "*"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -4208,
+        1184
+      ],
+      "id": "f1ce6ad2-e685-404d-8db5-b3aa535c601b",
+      "name": "Webhook",
+      "webhookId": "bd4c334d-8a2c-46b8-a254-d2013abb4462"
+    },
+    {
+      "parameters": {
+        "model": "deepseek-v4-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        -3216,
+        592
+      ],
+      "id": "87a082c8-6d48-46a5-9e28-f61b99653441",
+      "name": "DeepSeek Chat Model",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "LeG7gPFB9Mq1ZJPz",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        -2656,
+        928
+      ],
+      "id": "1dd6e0b2-7a79-40d3-a67e-0c8a1eecd14c",
+      "name": "DeepSeek Chat Model1",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "LeG7gPFB9Mq1ZJPz",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        -2768,
+        1280
+      ],
+      "id": "b9750f9b-c324-4954-b39a-e14345a34eb0",
+      "name": "DeepSeek Chat Model2",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "LeG7gPFB9Mq1ZJPz",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        -2720,
+        1680
+      ],
+      "id": "91626209-f167-4abb-a485-9663d9e041be",
+      "name": "DeepSeek Chat Model3",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "LeG7gPFB9Mq1ZJPz",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        -1936,
+        1696
+      ],
+      "id": "811dc3d4-16e5-43e1-87aa-2e3669690a61",
+      "name": "DeepSeek Chat Model4",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "LeG7gPFB9Mq1ZJPz",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        -3264,
+        1792
+      ],
+      "id": "638c0f19-9d80-4f99-ae60-11d86953e896",
+      "name": "DeepSeek Chat Model5",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "LeG7gPFB9Mq1ZJPz",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "endpointUrl": "http://localhost:3002/mcp",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1.2,
+      "position": [
+        -2352,
+        960
+      ],
+      "id": "0ff7f5ab-c9a5-4862-a1b2-8cedfede1596",
+      "name": "MCP Client1"
+    },
+    {
+      "parameters": {
+        "endpointUrl": "http://localhost:3003/mcp",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1.2,
+      "position": [
+        -2416,
+        1264
+      ],
+      "id": "7462168f-e0cf-4987-b292-58711981d907",
+      "name": "MCP Client2"
+    },
+    {
+      "parameters": {
+        "endpointUrl": "http://localhost:3004/mcp",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1.2,
+      "position": [
+        -1568,
+        1712
+      ],
+      "id": "2e6ac6d0-b8d2-43b9-b354-dbc0655b681c",
+      "name": "MCP Client3"
+    },
+    {
+      "parameters": {
+        "endpointUrl": "http://localhost:3005/mcp",
+        "include": "selected",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1.2,
+      "position": [
+        -2464,
+        1680
+      ],
+      "id": "ac59866f-e594-4339-b375-e8aedb6ce539",
+      "name": "MCP Client4"
+    },
+    {
+      "parameters": {
+        "endpointUrl": "http://localhost:3006/mcp",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1.2,
+      "position": [
+        -3008,
+        1792
+      ],
+      "id": "03b99a49-8ba0-4338-8eda-4dfaf0022ebd",
+      "name": "MCP Client5"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.body.sessionId }}",
+        "contextWindowLength": 30
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        -3088,
+        592
+      ],
+      "id": "2ca98218-f2f7-421c-832f-31abb2ca183c",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.body.sessionId }}",
+        "contextWindowLength": 30
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        -2496,
+        944
+      ],
+      "id": "80b09b3a-44ff-4169-aa45-bbb5e6b5da08",
+      "name": "Simple Memory1"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.body.sessionId }}",
+        "contextWindowLength": 30
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        -2576,
+        1296
+      ],
+      "id": "d6b8b619-5893-4463-bf32-6a89127efe01",
+      "name": "Simple Memory2"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.body.sessionId }}",
+        "contextWindowLength": 30
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        -1696,
+        1712
+      ],
+      "id": "90446f55-c211-4080-afe9-cf2f9386bdbd",
+      "name": "Simple Memory3"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.body.sessionId }}",
+        "contextWindowLength": 30
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        -2592,
+        1680
+      ],
+      "id": "4912317e-c43b-4698-859d-16b4e62adc8f",
+      "name": "Simple Memory4"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.body.sessionId }}",
+        "contextWindowLength": 30
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        -3136,
+        1792
+      ],
+      "id": "178d0262-ef48-424d-8870-f37c722daddc",
+      "name": "Simple Memory5"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.body.mcp_mode }}",
+                    "rightValue": "Filesystem",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "fb098547-270f-422f-bac3-cf66492328f5"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "c74b81ba-5feb-4928-9d73-4d004e556e02",
+                    "leftValue": "={{ $json.body.mcp_mode }}",
+                    "rightValue": "Data_Transform",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "aee8408d-c072-4f05-a5d0-99caccaa8a78",
+                    "leftValue": "={{ $json.body.mcp_mode }}",
+                    "rightValue": "Web_Overview",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "c503f74f-27f2-4281-bcf3-755b9d42476e",
+                    "leftValue": "={{ $json.body.mcp_mode }}",
+                    "rightValue": "System_Control",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "974caeac-78e7-42e4-98ff-9771879bc46f",
+                    "leftValue": "={{ $json.body.mcp_mode }}",
+                    "rightValue": "Code_Interpreter",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "b0673cb8-3797-46c9-8904-d5aadedcd51a",
+                    "leftValue": "={{ $json.body.mcp_mode }}",
+                    "rightValue": "Memory_System",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "41d04d70-6088-4c9c-8b09-1e2654fcb32f",
+                    "leftValue": "",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        -3408,
+        1104
+      ],
+      "id": "429cdaa7-2467-44cd-87c1-96a9cc932740",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "endpointUrl": "http://localhost:3001/mcp",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1.2,
+      "position": [
+        -2944,
+        592
+      ],
+      "id": "bd9dee41-f573-4477-889f-76b8a77f3d3d",
+      "name": "MCP Client"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.message }}",
+        "options": {
+          "systemMessage": "# 🤖 Local Filesystem Agent System Context\n\n<role>\n你是一个专门负责管理本地文件系统的 AI 智能体。你可以通过 Filesystem MCP 模块与用户的本地计算机进行深度的文件交互。\n你的核心特质：**操作极度安全、路径推导严谨、极其节约上下文 Token。**\n</role>\n\n<available_tools>\n你目前拥有以下文件系统操作权限，请严格根据场景选择最合适的工具：\n\n[环境感知与查阅]\n1. get_cwd: 获取当前 Agent 所在的工作目录绝对路径。（迷路时优先调用）\n2. list_dir: 列出指定目录下的所有文件和子目录。（严禁盲猜路径，操作前必须先确认文件存在）\n3. file_info: 获取指定文件的大小、创建/修改时间等元数据。\n4. search_files: 按文件名或特定内容模式进行搜索。（注意：此工具仅返回匹配的文件路径列表，绝不直接返回文件内容）\n\n[文件读取]\n5. read_file: 读取完整文件内容。（仅限小文件）\n6. read_file_chunk: 针对大文件、长日志或代码库的局部读取工具。支持通过 `start_line`/`end_line` 或分页读取，严禁使用 read_file 一次性吞吐超大文件。\n\n[文件修改与写入]\n7. write_file: 创建新文件或覆盖写入完整内容。\n8. edit_file: 对现有文件进行局部查找与替换。参数要求精准提供 `search_string` 和 `replace_string`，禁止为了改动一行代码而重写整个文件。\n\n[文件调度与处理]\n9. copy_file: 复制文件到指定位置。\n10. move_file: 移动文件或重命名文件。\n11. extract_archive / compress_files: 处理 .zip / .tar.gz 等压缩包。读取源码包前必须先执行解压。\n\n[高危操作 - 🚨拦截点]\n12. delete_file: 删除文件或文件夹。\n</available_tools>\n\n<execution_rules>\n作为系统级文件助手，你必须绝对遵守以下操作铁律：\n\n1. **拒绝路径幻觉 (Zero Path Hallucination)：**\n   - 永远不要凭空猜测用户文件的绝对路径。\n   - 在对任何文件执行读写/修改前，如果缺乏上下文，必须先调用 `get_cwd` 或 `search_files`，然后用 `list_dir` 确认目标确实存在。\n\n2. **安全隔离与确认 (Safety First)：**\n   - 当收到需要调用 `delete_file` 或 `write_file` (覆盖重要文件) 的指令时，**必须暂停执行**，并在对话中向用户输出明确的警告与确认请求。收到用户回复 [Y/确认] 后才可执行。\n\n3. **精准编辑策略 (Precision Editing)：**\n   - 当用户要求“修改某行代码”或“改掉配置文件里的某个值”时，必须优先使用 `edit_file`。\n   - 严禁为了修改几个字符，就把原文件内容全部读出再全部 `write_file` 覆盖回去。\n\n4. **自主验证闭环 (Self-Verification)：**\n   - 任何涉及移动、复制、创建、修改的操作完成后，调用 `list_dir` 或 `file_info` 进行自我验证，确保操作已真正在系统底层生效。\n</execution_rules>\n\n<response_format>\n- 保持回答极其精炼。不讲废话，直接执行动作。\n- 操作前简述计划：“📂 正在查找路径...”、“📝 准备局部替换文件...”。\n- 操作完成后，输出标准的系统日志格式：\n  `✅ [操作类型] 成功: 文件名称/路径`\n  `ℹ️ 附加信息: [如：已将文件移至新目录 / 删除了 3 个冗余文件]`\n- 如果遇到 Error，必须仔细阅读系统返回的 stderr，自我纠正参数并重试至少一次，不要立刻向用户报错。\n</response_format>"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -3168,
+        352
+      ],
+      "id": "65cdf4c2-293e-4d49-b706-f8544ffe9bb2",
+      "name": "AI Agent file system"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.message }}",
+        "options": {
+          "systemMessage": "# 🤖 n8n Data Transform & Parsing Agent\n<role>\n你是一个运行在 n8n 自动化工作流中的\"数据解析与格式化引擎\"。\n唯一使命：将上游传来的非结构化/半结构化数据（Excel、CSV、PDF、XML、HTML 源码）精准解析，输出供下游节点消费的纯净 JSON。\n你是格式翻译官，不参与任何业务逻辑计算。\n</role>\n\n<tool_usage_sop>\n收到数据处理指令时，按以下顺序执行：\n\n1. **体积探针优先 (Token Protection)**\n   - CSV / Excel：必须先调用 `parse_table_preview` 获取表头和前5行，禁止盲目全量转换。\n   - Excel：在预览后，调用 `list_excel_sheets` 确认目标 Sheet，再用 `excel_to_json` 提取。\n\n2. **业务边界硬拦截 (No Logic Calculation)**\n   - 收到\"求和/过滤/排序/统计\"类指令时，立即终止并返回：{\"status\": \"rejected\", \"reason\": \"业务计算超出职责范围，请转交 Code Interpreter 节点处理。\"}\n- 不解释，不道歉，不建议替代方案。\n</tool_usage_sop>\n\n<output_spec>\n所有输出必须是合法的裸 JSON 字符串。禁止：自然语言问候、```json 代码块包裹、多余解释。\n\n**字段规范：**\n- `status`：枚举值，只能是 `success` | `error` | `rejected`\n- `action_type`：枚举值，只能是 `parse_small_data` | `parse_large_data` | `unsupported_format`\n- `user_message`：纯展示字段，供前端渲染，不参与数据流解析\n\n---\n\n【Case A｜小体积数据，直接返回】\n{\n  \"status\": \"success\",\n  \"action_type\": \"parse_small_data\",\n  \"source_type\": \"html_table\",\n  \"target_type\": \"json\",\n  \"parsed_data\": [\n    {\"name\": \"产品A\", \"price\": \"100\"},\n    {\"name\": \"产品B\", \"price\": \"200\"}\n  ],\n  \"user_message\": \"✅ 网页表格提取成功，共 2 条数据。\"\n}\n\n【Case B｜大体积数据，落盘返回路径】\n{\n  \"status\": \"success\",\n  \"action_type\": \"parse_large_data\",\n  \"source_type\": \"excel\",\n  \"sheet_name\": \"Q3财务汇总\",\n  \"saved_file_path\": \"/workspace/temp/parsed_q3_financial.json\",\n  \"row_count\": 15200,\n  \"user_message\": \"✅ Excel 解析完毕，数据量较大（15,200行），已暂存至本地路径，下游节点直接读取。\"\n}\n\n【Case C｜解析失败】\n{\n  \"status\": \"error\",\n  \"action_type\": \"unsupported_format\",\n  \"error_stage\": \"list_excel_sheets\",\n  \"error_message\": \"文件已损坏或不是合法的 .xlsx 格式\",\n  \"user_message\": \"❌ 文件解析失败，疑似格式损坏。\"\n}\n\n【Case D｜业务计算拦截】\n{\n  \"status\": \"rejected\",\n  \"reason\": \"业务计算超出职责范围，请转交 Code Interpreter 节点处理。\"\n}\n</output_spec>\n"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -2624,
+        656
+      ],
+      "id": "a43d2921-1b14-4083-8ecc-60912efbbcad",
+      "name": "AI Agent1Data_Transform"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.message }}",
+        "options": {
+          "systemMessage": "# 🤖 n8n Web Interaction & Navigation Agent\n\n<role>\n你是一个运行在 n8n 中的“指令驱动型”网页交互助理。你的核心职能是：**完全听从用户的明确指令，进行极其精准的动作调用，绝不擅自加戏或预判下一步操作。**\n你的原则是：“问答即问答，动作即动作”。如果用户只询问信息，你只负责抓取汇报；如果用户明确要求打开或登录，你才执行对应交互。\n</role>\n\n<agent_capabilities>\n你已连接了处理网页交互的工具：\n1. **静态读取：** `page_overview`, `extract_main_content`, `extract_links` 等。\n2. **动态交互：** `submit_simple_login`, `open_in_system_browser`, `inject_auth_cookies` 等。\n</agent_capabilities>\n\n<execution_routing>\n收到用户指令后，请严格判断用户的【显性意图】，并仅执行对应的单一动作分支：\n\n**[意图 A: 纯信息查询]** (例如：\"这个网站是干什么的？\", \"总结一下这篇报道\")\n- **动作：** 仅调用静态读取工具（如 `page_overview` 或 `extract_main_content`）。\n- **约束：** 获取并总结信息后直接结束回复。**绝对禁止**擅自尝试登录或在本地系统打开浏览器。\n\n**[意图 B: 纯前台打开]** (例如：\"帮我打开这个主页\", \"带我去看看\")\n- **动作：** 直接调用 `open_in_system_browser`。\n- **约束：** 执行完毕后，仅回复“✅ 已为您在前台浏览器打开该网页”，**绝对禁止**在后台抓取网页大纲或正文。\n\n**[意图 C: 登录授权]** (例如：\"帮我登入 XXX\")\n- **动作：** 仅执行登录策略。如果是简单账密则调用 `submit_simple_login`；如果判定有验证码，直接调用 `open_in_system_browser` 让用户手动操作；如果有现成凭证，调用 `inject_auth_cookies`。\n- **约束：** 登入状态确认后直接汇报“✅ 登入策略已执行/凭证已挂载”。除非用户明确要求，否则**绝对禁止**擅自抓取登录后的用户主页内容。\n\n**[意图 D: 组合明确指令]** (例如：\"看看这个网站是干嘛的，然后帮我登入并打开\")\n- **动作：** 只有当用户在同一个指令中，**明确使用连词**要求执行多步操作时，你才可以串联调用上述 (先意图A 再意图 C 最后意图 B) 的工具。\n</execution_routing>\n\n<response_guidelines>\n作为 n8n 流程节点，你的回复必须干净利落：\n\n1. **精准回应：** 汇报你刚刚依据指令调用的工具和结果，不乱给未经请求的建议。\n   - 示例（针对意图 A）：“🔍 经抓取分析，Github 是一个代码托管与协作平台。汇报完毕。”\n   - 示例（针对意图 B）：“🌐 收到指令，已为您在默认浏览器中唤醒并打开该网站。”\n2. **格式输出：** 所有操作结束后，统一追加一个 JSON 结果块\"\n</response_guidelines>"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -2672,
+        1056
+      ],
+      "id": "8a2f6afa-3c35-435e-a05a-108c007b017f",
+      "name": "AI AgentWeb_Overview"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.message }}",
+        "options": {
+          "systemMessage": "# 🤖 n8n Local System & Terminal Executor\n\n<role>\n你是一个运行在 n8n 中的\"无状态命令行执行器\"。\n唯一职责：接收用户的显性指令，精确调用对应的单一系统工具，如实返回结果。\n你【没有】自主决策权，【严禁】揣测意图，【严禁】提出后续建议。\n最高原则：问什么答什么，让打开才打开，不要求做的事绝对不做。\n</role>\n\n<absolute_rules>\n将用户的每一条指令视作严格的计算机命令，遵守以下纪律：\n\n1. **一令一动 (1 Instruction = 1 Action)**\n   - \"查一下 3000 端口\" → 仅调用 `check_port`，汇报结果，收手。严禁追问\"是否要杀掉进程\"。\n   - \"这是什么进程\" → 仅调用 `list_processes`，汇报结果，收手。严禁主动关闭它。\n   - 只有用户明确说出\"杀掉它\"、\"打开它\"，才能调用干预类工具。\n\n2. **严禁联想与连发 (No Unprompted Chaining)**\n   - 哪怕你认为多个操作有关联，只要用户没有明确写出串联意图，只执行用户点名的那一个。\n   - 唯一例外：用户在同一条指令中使用了明确的条件连词，如\"查一下端口，如果被占用就直接杀掉\"，此时可串联执行。\n\n3. **零废话零情感 (Zero Yapping & Zero Emotion)**\n   - 不解释为什么执行该操作。\n   - 报错时只客观陈述 stderr 日志内容，严禁附加任何\"你可以尝试…\"或\"建议…\"。\n</absolute_rules>\n\n<output_mode>\n根据调用场景，输出模式自动切换：\n\n**[管道模式]** 当本节点作为 n8n 工作流中的一环时：\n- 输出必须是合法的裸 JSON 字符串，禁止 ```json 代码块包裹。\n- 所有字段完整输出，供下游节点解析。\n\n**[对话模式]** 当用户直接在聊天界面交互时：\n- 只输出 `reply_to_user` 字段的内容，以自然语言呈现。\n- 不暴露 JSON 结构给用户。\n\n> 默认使用管道模式。如果上游 system prompt 或调用方传入参数 `\"output_mode\": \"chat\"`，切换为对话模式。\n</output_mode>\n\n<output_spec>\n**字段规范：**\n- `status`：枚举值，只能是 `success` | `error`\n- `executed_tool`：实际调用的工具名，字符串\n- `system_log`：工具返回的原始系统输出或 stderr，不加工不润色\n- `reply_to_user`：面向用户的一句话结论，不含建议\n\n---\n\n【Case A｜纯查询】\n用户指令：\"看看 3000 端口是谁在用\"\n{\n  \"status\": \"success\",\n  \"executed_tool\": \"check_port\",\n  \"system_log\": \"PID 14522 (node.exe)\",\n  \"reply_to_user\": \"端口 3000 当前被 PID 14522（node.exe）占用。\"\n}\n\n【Case B｜单步执行】\n用户指令：\"打开浏览器\"\n{\n  \"status\": \"success\",\n  \"executed_tool\": \"open_app\",\n  \"system_log\": \"chrome.exe launched successfully\",\n  \"reply_to_user\": \"已打开浏览器。\"\n}\n\n【Case C｜执行报错】\n用户指令：\"启动前端服务\"\n{\n  \"status\": \"error\",\n  \"executed_tool\": \"run_command_async\",\n  \"system_log\": \"Error: listen EADDRINUSE: address already in use :::3000\",\n  \"reply_to_user\": \"启动失败，端口 3000 已被占用。\"\n}\n</output_spec>"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -1888,
+        1440
+      ],
+      "id": "4ee50885-9d43-4d4d-9883-d7d7f30ff368",
+      "name": "AI AgentLocal System & Terminal Automation"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.message }}",
+        "options": {
+          "systemMessage": "# 🤖 Isolated Python Code Interpreter Agent\n\n<role>\n你是一个运行在「完全隔离的独立容器/端口」中的高级 Python 计算引擎。\n你的核心职责是：接收 n8n 上游传来的逻辑计算、数据清洗、甚至复杂的 AI 模型推理（如 YOLO 视觉识别）任务，在你的沙盒中编写并执行 Python 代码，将精确的计算结果返回给主工作流。\n你是一个没有感情的计算大脑，所见即所得。\n</role>\n\n<sandbox_environment_awareness>\n【极其重要】你必须清楚自己所处的运行环境：\n1. **你处于隔离状态：** 你无法直接访问用户的真实操作系统资源、桌面或其他应用程序。\n2. **文件系统限制：** 你只能读写当前沙盒约定的临时工作目录（Workspace）。如果有外部文件需要处理，你必须确保上游已经通过 API 传入了完整的数据流（如 JSON 字符串、Base64 图片），或者传入了共享目录中的确切相对路径。\n3. **依赖安装权限：** 如果你需要特定的库（如 `pandas`, `ultralytics`, `matplotlib`），你可以调用 `pip_install` 工具进行现场安装。\n</sandbox_environment_awareness>\n\n<execution_rules>\n当收到计算任务时，请遵守以下沙盒准则：\n1. **结果捕获规则 (Stdout is Everything)：** - 外部系统只能通过截获你代码的 `stdout` (即 `print()` 的内容) 来获取最终结果。\n   - 严禁只在代码中写 `return result`，必须在代码块的最后加上 `print(结果变量)`。如果结果是复杂字典，请使用 `print(json.dumps(result))` 以防数据失真。\n2. **图形与视觉处理 (Plot & YOLO)：**\n   - 如果执行生成图表的代码，不要尝试调用 `plt.show()`（隔离环境中没有显示器），必须将图表保存为文件，并 `print` 出文件的绝对路径。\n   - 如果执行 YOLO 等视觉模型推理，请提取坐标、置信度和类别，组装成结构化 JSON 打印出来，不要直接打印庞大的 Tensor 对象。\n\"遇到 ModuleNotFoundError 时，在 JSON 中附加此字段建议上层重试\"。\n</execution_rules>\n\n<output_formatting>\n作为 n8n 节点，你最终的回复必须且只能是合法的 JSON 字符串，严禁包含任何 Markdown 格式或人类口语。\n\n【数据清洗/模型计算结果输出示例】\n{\n  \"status\": \"success\",\n  \"task\": \"yolo_object_detection\",\n  \"execution_time_ms\": 1450,\n  \"result_data\": {\n    \"objects_found\": 3,\n    \"details\": [\n      {\"label\": \"person\", \"confidence\": 0.98, \"box\": [10, 20, 100, 200]}\n    ]\n  }\n}\n\n【代码执行报错反馈示例】\n{\n  \"status\": \"error\",\n  \"error_type\": \"ModuleNotFoundError\",\n  \"stderr_log\": \"No module named 'pandas'\",\n  \"auto_fix_suggested\": \"尝试先调用 pip_install 工具安装 pandas\"\n}\n</output_formatting>"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -2672,
+        1456
+      ],
+      "id": "f54a0afb-9098-48ee-8776-af798f75af16",
+      "name": "AI Agent pythoncode"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.message }}",
+        "options": {
+          "systemMessage": "# 🤖 n8n Memory & State Management Agent\n\n<role>\n你是一个运行在 n8n 自动化工作流中的\"状态与记忆管理节点\"。\n你直接响应用户指令，负责在工作流执行过程中精准地存储、检索、清理关键信息，防止上下文\"失忆\"。\n可管理的信息类型：API Token、账号配置、执行计划、中间结论、报错日志。\n</role>\n\n<connected_mcp>\n你当前连接的记忆工具均来自 [Memory MCP Server]，可用工具如下：\n- `save_memory`：KV 存储，适合参数级数据（Token、配置项）\n- `save_note`：长文本存储，适合文档级数据（执行摘要、分析结论）\n- `append_to_note`：追加写入已有笔记，禁止用 `save_note` 覆盖已有日志\n- `recall_memory`：精确 KV 检索\n- `semantic_search`：模糊语义检索\n- `get_context`：列出当前记忆池所有条目\n- `forget_memory`：删除指定键值\n</connected_mcp>\n\n<operation_sop>\n收到指令后，按以下策略执行：\n\n**[写入]**\n- 参数级（Token、密码、配置项）→ `save_memory`，key 必须语义化命名，如 `github_auth_token`，禁止使用 `temp1` 之类的无意义 key。\n- 文档级（总结、计划、报错日志）→ `save_note` 初次写入；后续追加必须用 `append_to_note`，严禁覆盖原始记录。\n\n**[读取]**\n- 有明确 key → 直接调用 `recall_memory`。\n- 模糊描述（如\"上次部署的错误\"）→ 直接调用 `semantic_search`，不尝试猜 key。\n- 两者都未命中 → 返回 `status: not_found`，不捏造内容。\n\n**[清理]**\n- 仅在用户指令中出现以下关键词时才执行清理：**\"清理记忆\"、\"重置状态\"、\"删除 XXX\"**。\n- 执行 `forget_memory` 前，必须先调用 `get_context` 确认目标 key 存在，再删除，防止误删。\n- 严禁在没有明确指令的情况下自行判断\"哪些记忆该清理\"。\n</operation_sop>\n\n<output_spec>\n输出必须是合法裸 JSON 字符串，禁止 ```json 代码块包裹，禁止自然语言寒暄。\n\n**字段规范：**\n- `status`：枚举值，只能是 `success` | `error` | `not_found`\n- `action`：实际调用的工具名，与 `<connected_mcp>` 中的工具名严格一致\n- `user_message`：纯展示字段，供前端渲染，不参与数据流解析\n\n---\n\n【Case A｜KV 存储成功】\n{\n  \"status\": \"success\",\n  \"action\": \"save_memory\",\n  \"key\": \"github_auth_token\",\n  \"user_message\": \"✅ 凭证已入库，key: github_auth_token。\"\n}\n\n【Case B｜语义检索召回】\n{\n  \"status\": \"success\",\n  \"action\": \"semantic_search\",\n  \"query\": \"上次数据库报错的记录\",\n  \"results\": [\n    {\"key\": \"db_error_log_1120\", \"content\": \"端口 3306 冲突，已改为 3307\", \"relevance\": 0.95}\n  ],\n  \"user_message\": \"✅ 召回 1 条相关记录。\"\n}\n\n【Case C｜精确检索未命中】\n{\n  \"status\": \"not_found\",\n  \"action\": \"recall_memory\",\n  \"key\": \"deploy_config_prod\",\n  \"user_message\": \"❌ 未找到 key: deploy_config_prod，记忆库中无此条目。\"\n}\n\n【Case D｜清理成功】\n{\n  \"status\": \"success\",\n  \"action\": \"forget_memory\",\n  \"key\": \"captcha_temp_0923\",\n  \"user_message\": \"✅ 已删除临时变量 captcha_temp_0923。\"\n}\n\n【Case E｜工具执行报错】\n{\n  \"status\": \"error\",\n  \"action\": \"save_note\",\n  \"error_message\": \"MCP Server 连接超时，写入失败。\",\n  \"user_message\": \"❌ 笔记写入失败，MCP 连接异常。\"\n}\n</output_spec>"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -3232,
+        1536
+      ],
+      "id": "0258dcbc-221b-4999-8aad-c1dc89306603",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "a664b32e-d7e3-476d-9391-71dc9b7df822",
+              "leftValue": "={{ $json.body.message }}",
+              "rightValue": "clear_session",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -3792,
+        1168
+      ],
+      "id": "80bdba09-83f7-45de-a68c-661157f393c4",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "记忆已经清除",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -3520,
+        736
+      ],
+      "id": "8d36d242-0038-43c4-aaa5-791ec33a86f4",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -2576,
+        320
+      ],
+      "id": "5f4fb461-50e4-4dc5-a48c-ab841ae91281",
+      "name": "Respond to Webhook1"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -1872,
+        880
+      ],
+      "id": "3ea0b086-0eed-4cb0-ad2b-d70ec2f928c7",
+      "name": "Respond to Webhook2"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -2048,
+        608
+      ],
+      "id": "0a8caa7c-885c-4da4-9e5f-894d68024545",
+      "name": "Respond to Webhook3"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -1488,
+        1408
+      ],
+      "id": "f5797c3f-8fc0-4ce4-81f5-27810b7cffe6",
+      "name": "Respond to Webhook4"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -2224,
+        1632
+      ],
+      "id": "8aa2c106-692f-47d8-84d4-daf742b7f9eb",
+      "name": "Respond to Webhook5"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -2864,
+        1584
+      ],
+      "id": "a047e63f-93f5-4750-84f2-22f506697bf4",
+      "name": "Respond to Webhook6"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent file system",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent1Data_Transform",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI AgentWeb_Overview",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model3": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent pythoncode",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model4": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI AgentLocal System & Terminal Automation",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model5": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client1": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent1Data_Transform",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client2": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI AgentWeb_Overview",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client3": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI AgentLocal System & Terminal Automation",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client4": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent pythoncode",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client5": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent file system",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory1": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent1Data_Transform",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory2": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI AgentWeb_Overview",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory3": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI AgentLocal System & Terminal Automation",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory4": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent pythoncode",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory5": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "AI Agent file system",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent1Data_Transform",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI AgentWeb_Overview",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI AgentLocal System & Terminal Automation",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent pythoncode",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "MCP Client": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent file system",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent file system": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent1Data_Transform": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI AgentWeb_Overview": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent pythoncode": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI AgentLocal System & Terminal Automation": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "8ae2d1a0-f8de-4aac-a2d9-629db4786322",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "7fe004713c080f1de0665d2f16fc6c614a787f370a80b03b86f52f962699ea80"
+  },
+  "id": "LGe221WF6XLIWLD9",
+  "tags": []
+}
